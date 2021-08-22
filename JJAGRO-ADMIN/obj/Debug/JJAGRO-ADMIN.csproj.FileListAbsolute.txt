@@ -1,0 +1,11 @@
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.exe.config
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.exe
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.pdb
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.AssemblyReference.cache
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.Form1.resources
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.Properties.Resources.resources
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.GenerateResource.cache
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.exe
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.pdb
+C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.RegistroUsuario.resources
