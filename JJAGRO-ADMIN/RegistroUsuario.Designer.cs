@@ -33,6 +33,8 @@ namespace JJAGRO_ADMIN
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnregistrousuario = new System.Windows.Forms.Button();
             this.rbadministrador = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@ namespace JJAGRO_ADMIN
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Regresar = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -114,8 +114,25 @@ namespace JJAGRO_ADMIN
             this.groupBox1.Size = new System.Drawing.Size(367, 437);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             this.groupBox1.UseCompatibleTextRendering = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(11, 370);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(243, 13);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "permiso de borrar datos de nuestra Base de Datos";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(11, 351);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(209, 13);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Nota: los usuarios administradores tendran ";
             // 
             // btnregistrousuario
             // 
@@ -308,24 +325,6 @@ namespace JJAGRO_ADMIN
             this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 28;
             this.label6.Text = "Regresar";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 351);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(209, 13);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Nota: los usuarios administradores tendran ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(11, 370);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(243, 13);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "permiso de borrar datos de nuestra Base de Datos";
             // 
             // RegistroUsuario
             // 
