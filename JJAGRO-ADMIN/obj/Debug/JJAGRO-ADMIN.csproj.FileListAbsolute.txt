@@ -9,3 +9,14 @@ C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csp
 C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.exe
 C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.pdb
 C:\Users\JM_IM\source\repos\JJAGRO-ADMIN\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.RegistroUsuario.resources
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.exe.config
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.exe
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.pdb
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.AssemblyReference.cache
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.Form1.resources
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.Properties.Resources.resources
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.RegistroUsuario.resources
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.GenerateResource.cache
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.exe
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.pdb

@@ -19,11 +19,11 @@ namespace JJAGRO_ADMIN
 
             if (sIpAG.Length > 0)
             {
-                sCadenaConexion = "DRIVER={PostgreSQL};"
+                sCadenaConexion = "DRIVER={PostgreSQL UNICODE};"
                     + "Server=" + sIpAG + ";"
-                    + "DATABASE=jjagro;"
+                    + "DATABASE=postgres;"
                     + "Trusted_connection=yes;"
-                    + "UID=;"
+                    + "UID=;postgres"
                     + "PWD=;";
 
                 conexion = new OdbcConnection(sCadenaConexion);
@@ -36,6 +36,7 @@ namespace JJAGRO_ADMIN
                 {
                     sMensaje = ex.ToString();
                     //MessageBox.Show(sMensaje);
+                    CLog.XLog(sMensaje);
                     conexion = null;
                 }
             }

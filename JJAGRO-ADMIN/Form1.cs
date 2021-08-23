@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
+using System.Data.Odbc;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -32,17 +33,64 @@ namespace JJAGRO_ADMIN
 
         private void Button1_Click(object sender, EventArgs e)
         {
-          
+            CLog.XLog("-------------------------------------------------------------");
+            CLog.XLog("Entramos a validar el usuario");
 
             if (!string.IsNullOrWhiteSpace(txtcorreo.Text) && !string.IsNullOrWhiteSpace(txtpass.Text))
             {
                 //capturamos el correo y procedemos a valiarlo
                 string correo = txtcorreo.Text;
+                string pass = txtpass.Text;
+
+                CLog.XLog("Correo Electronico: " + correo);
+                //validamos el correo
                 bool isOk = ValidateEmail(correo);
                  
                 if (isOk)
                 {
-                    MessageBox.Show("Todo OK");
+                    OdbcConnection Con;
+                    OdbcCommand Cmd;
+                    OdbcDataReader reader;
+ 
+                    Con = CConeccion.conexionAG();
+
+                    string sMensaje;
+                    try
+                    {
+                        if ((Con != null) && (Con.State == ConnectionState.Open))
+                        {
+                            string sCadenaSql = String.Format(" select correoelectronico, contraseña from usuariosjjagro where correoelectronico = '{0}' and contraseña = '{1}'",correo,pass);
+                            Cmd = Con.CreateCommand();
+                            Cmd.CommandType = CommandType.Text;
+                            Cmd.CommandText = sCadenaSql;
+                            CLog.XLog("VALIDANDO: " + sCadenaSql);
+                            try
+                            {
+                                reader = Cmd.ExecuteReader();
+                                while (reader.Read())
+                                {
+                                    string iRes = reader.GetString(0);
+                                }
+                            }
+                            catch (Exception ex)
+                            {
+                                sMensaje = ex.Message.ToString();
+                                CLog.XLog("Problema al ejecutar la consulta: " + sMensaje);
+                            }
+                            finally
+                            {
+                                Con.Close();
+                            }
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        sMensaje = ex.Message.ToString();
+                        CLog.XLog("Problema de conexion: " + sMensaje);
+                    }
+
+
+
                 }
                 else
                 {
@@ -54,6 +102,7 @@ namespace JJAGRO_ADMIN
             {
                 MessageBox.Show("El Correo o la Contraseña son requeridos obligatoriamente");
             }
+            CLog.XLog("-------------------------------------------------------------");
         }
 
 
