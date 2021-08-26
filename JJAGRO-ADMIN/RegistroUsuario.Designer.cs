@@ -54,6 +54,7 @@ namespace JJAGRO_ADMIN
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Regresar = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.BtnLimpiar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -63,6 +64,7 @@ namespace JJAGRO_ADMIN
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Regresar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnLimpiar)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -81,7 +83,7 @@ namespace JJAGRO_ADMIN
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(76, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(76, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(248, 93);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -90,6 +92,7 @@ namespace JJAGRO_ADMIN
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.BtnLimpiar);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.btnregistrousuario);
@@ -109,7 +112,7 @@ namespace JJAGRO_ADMIN
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtpaterno);
             this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Location = new System.Drawing.Point(23, 132);
+            this.groupBox1.Location = new System.Drawing.Point(23, 115);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(367, 437);
             this.groupBox1.TabIndex = 0;
@@ -137,11 +140,11 @@ namespace JJAGRO_ADMIN
             // btnregistrousuario
             // 
             this.btnregistrousuario.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnregistrousuario.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnregistrousuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnregistrousuario.ForeColor = System.Drawing.Color.White;
-            this.btnregistrousuario.Location = new System.Drawing.Point(188, 390);
+            this.btnregistrousuario.Location = new System.Drawing.Point(117, 390);
             this.btnregistrousuario.Name = "btnregistrousuario";
-            this.btnregistrousuario.Size = new System.Drawing.Size(173, 41);
+            this.btnregistrousuario.Size = new System.Drawing.Size(244, 41);
             this.btnregistrousuario.TabIndex = 6;
             this.btnregistrousuario.Text = "REGISTRAR USUARIO";
             this.btnregistrousuario.UseVisualStyleBackColor = false;
@@ -326,6 +329,16 @@ namespace JJAGRO_ADMIN
             this.label6.TabIndex = 28;
             this.label6.Text = "Regresar";
             // 
+            // BtnLimpiar
+            // 
+            this.BtnLimpiar.Image = global::JJAGRO_ADMIN.Properties.Resources.limpieza_de_datos;
+            this.BtnLimpiar.Location = new System.Drawing.Point(326, 314);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(30, 30);
+            this.BtnLimpiar.TabIndex = 29;
+            this.BtnLimpiar.TabStop = false;
+            this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
+            // 
             // RegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,6 +363,7 @@ namespace JJAGRO_ADMIN
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Regresar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnLimpiar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -381,5 +395,6 @@ namespace JJAGRO_ADMIN
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox BtnLimpiar;
     }
 }

@@ -37,6 +37,8 @@ namespace JJAGRO_ADMIN
             CLog.XLog("-------------------------------------------------------------");
             CLog.XLog("Entramos a validar el usuario");
 
+           
+
             if (!string.IsNullOrWhiteSpace(txtcorreo.Text) && !string.IsNullOrWhiteSpace(txtpass.Text))
             {
                 //capturamos el correo y procedemos a valiarlo
@@ -69,9 +71,12 @@ namespace JJAGRO_ADMIN
                             {
                                 reader = Cmd.ExecuteReader();
   
-                                if (reader.Read())
+                                if (!reader.Read())
                                 {
-                                    MessageBox.Show("autneticado");
+                                    CLog.XLog("Correo validado sera redireccionado al formulario principal");
+                                    this.Hide();
+                                    admin_jjagro admin = new admin_jjagro();
+                                    admin.Show();
                                 }
                                 else
                                 {
@@ -98,8 +103,6 @@ namespace JJAGRO_ADMIN
                         sMensaje = ex.Message.ToString();
                         CLog.XLog("Problema de conexion: " + sMensaje);
                     }
-
-
 
                 }
                 else
