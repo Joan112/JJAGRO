@@ -11,14 +11,14 @@ namespace JJAGRO_ADMIN
     {
         public static void XLog(string sMensaje)
         {
-            string folderPath = @"C:\JJAGRO";
+            string folderPath = @"C:\JJAGRO\LOG";
             if (!Directory.Exists(folderPath))
             {
                 Directory.CreateDirectory(folderPath);
             }
 
             string txtLog = "JJAGRO-" + DateTime.Now.Day.ToString().PadLeft(2, '0') + "-" + DateTime.Now.Month.ToString().PadLeft(2, '0') + "-" + DateTime.Now.Year.ToString();
-            using (StreamWriter Writer = new StreamWriter(string.Format("C:\\JJAGRO\\{0}.txt", txtLog), true))
+            using (StreamWriter Writer = new StreamWriter(string.Format("C:\\JJAGRO\\LOG\\{0}.txt", txtLog), true))
             {
                 //Writer.WriteLine(sMensaje);
                 Writer.WriteLine("[" + DateTime.Now.ToString("h:mm:ss") + "] >> " + sMensaje);

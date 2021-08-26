@@ -4,6 +4,7 @@ using System.Data.Odbc;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace JJAGRO_ADMIN
 {
@@ -13,19 +14,18 @@ namespace JJAGRO_ADMIN
         public static OdbcConnection conexionAG()
         {
             string sIpAG = "127.0.0.1";
-            string sCadenaConexion = string.Empty;
-            string sMensaje = string.Empty;
             OdbcConnection conexion;
 
             if (sIpAG.Length > 0)
             {
-                sCadenaConexion = "DRIVER={PostgreSQL UNICODE};"
-                    + "Server=" + sIpAG + ";"
-                    + "DATABASE=postgres;"
-                    + "Trusted_connection=yes;"
-                    + "UID=;postgres"
-                    + "PWD=;";
+                string sCadenaConexion = "DRIVER={PostgreSQL UNICODE};"
+                                        + "Server=" + sIpAG + ";"
+                                        + "DATABASE=jjagro;"
+                                        + "Trusted_connection=yes;"
+                                        + "UID=postgres;"
+                                        + "PWD=;";
 
+                
                 conexion = new OdbcConnection(sCadenaConexion);
 
                 try
@@ -34,8 +34,8 @@ namespace JJAGRO_ADMIN
                 }
                 catch (Exception ex)
                 {
-                    sMensaje = ex.ToString();
-                    //MessageBox.Show(sMensaje);
+                    string sMensaje = ex.ToString();
+                    MessageBox.Show(sMensaje);
                     CLog.XLog(sMensaje);
                     conexion = null;
                 }

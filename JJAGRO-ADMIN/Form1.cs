@@ -7,6 +7,7 @@ using System.Data.Odbc;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -67,9 +68,18 @@ namespace JJAGRO_ADMIN
                             try
                             {
                                 reader = Cmd.ExecuteReader();
-                                while (reader.Read())
+  
+                                if (reader.Read())
                                 {
-                                    string iRes = reader.GetString(0);
+                                    MessageBox.Show("autneticado");
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Usuario no autorizado el email no corresponde o no se encuentra en nuestros registros");
+                                    Thread.Sleep(2000);
+                                    txtcorreo.Text = "";
+                                    txtpass.Text = "";
+                                    txtcorreo.Focus();
                                 }
                             }
                             catch (Exception ex)
