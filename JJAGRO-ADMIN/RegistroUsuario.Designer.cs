@@ -190,6 +190,7 @@ namespace JJAGRO_ADMIN
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(322, 13);
             this.txtpass.TabIndex = 4;
+            this.txtpass.UseSystemPasswordChar = true;
             // 
             // pictureBox7
             // 

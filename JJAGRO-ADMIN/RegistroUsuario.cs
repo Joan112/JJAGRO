@@ -38,12 +38,11 @@ namespace JJAGRO_ADMIN
 
         private void btnregistrousuario_Click(object sender, EventArgs e)
         {
-            CLog.XLog("-------------------------------------------------------------");
-            CLog.XLog("Registrando Usuario");
+            
             //validamos los campos
             if (!string.IsNullOrEmpty(txtpaterno.Text) && !string.IsNullOrEmpty(txtmaterno.Text) && !string.IsNullOrEmpty(txtnombres.Text) && !string.IsNullOrEmpty(txtcoreoregistro.Text) && !string.IsNullOrEmpty(txtpass.Text))
             {
-                string parterno = txtpaterno.Text,
+                string paterno = txtpaterno.Text,
                         materno = txtmaterno.Text,
                         nombre = txtnombres.Text,
                         correo = txtcoreoregistro.Text,
@@ -70,73 +69,32 @@ namespace JJAGRO_ADMIN
                 }
                 else
                 {
-                    //validamos el checkbox de administrador
-                    
-                    
 
-                    OdbcConnection Con;
-                    OdbcCommand Cmd;
-                    OdbcDataReader reader;
+                    if(Funciones_publicas.ValidarEmailBD(correo))
+                    {
 
-                    Con = CConeccion.conexionAG();
-
-                    string sMensaje;
-                    try { 
-
-                        if ((Con != null) && (Con.State == ConnectionState.Open))
+                        if (Funciones_publicas.RegistraUsuario(paterno,materno,nombre,correo,pass,admin))
                         {
-                           
-
-                            string sCadenaSql = String.Format("INSERT INTO usuariosjjagro (paterno,materno,nombres,correoelectronico,contraseña,administrador) VALUES ('{0}','{1}','{2}','{3}','{4}',{5})"
-                                , parterno
-                                , materno
-                                , nombre
-                                , correo
-                                , pass
-                                , admin);
-
-                            Cmd = Con.CreateCommand();
-                            Cmd.CommandType = CommandType.Text;
-                            Cmd.CommandText = sCadenaSql;
-                            CLog.XLog("Usuario: " + sCadenaSql);
-
-                            try
-                            {
-
-                                reader = Cmd.ExecuteReader();
-                                CLog.XLog("Datos guardados correctamente");
-
-                                this.Hide();
-                                Form1 form = new Form1();
-                                form.Show();
-
-
-                            }
-                            catch (Exception ex)
-                            {
-                                sMensaje = ex.Message.ToString();
-                                CLog.XLog("Problema al ejecutar la consulta: " + sMensaje);
-                            }
-                            finally
-                            {
-                                Con.Close();
-                            }
-
+                            this.Hide();
+                            Form1 form = new Form1();
+                            form.Show();
                         }
 
                     }
-                    catch (Exception ex)
+                    else
                     {
-                        sMensaje = ex.Message.ToString();
-                        CLog.XLog("Problema de conexion: " + sMensaje);
+                        MessageBox.Show("El correo ya se encuentra registrado en nuestra Base de Datos, favor de ingresar un corro diferente...!!!");
+                        CLog.XLog("El correo ya se encuentra registrado en nuestra Base de Datos, favor de ingresar un corro diferente...!!!");
                     }
+
+
                 }
             }
             else
             {
                 MessageBox.Show("Los campos son Obligatorios");
             }
-            CLog.XLog("-------------------------------------------------------------");
+            
         }
 
         private void BtnLimpiar_Click(object sender, EventArgs e)
@@ -170,6 +128,9 @@ namespace JJAGRO_ADMIN
                 return false;
             }
         }
+
+        
+       
 
     }
 }
