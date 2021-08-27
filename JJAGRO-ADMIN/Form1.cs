@@ -111,7 +111,7 @@ namespace JJAGRO_ADMIN
                 }
                 else
                 {
-                    MessageBox.Show("Favor de ingresa un correo valido");
+                    MessageBox.Show("Favor de ingresar un correo valido...!!!  (elemplo@ejemplo.com)");
                 }
                 
             }
