@@ -23,5 +23,14 @@ WITH (
 );
 ALTER TABLE public.usuariosjjagro
   OWNER TO postgres;
+  
+CREATE SEQUENCE public.usuariosjjagro_id_seq
+  INCREMENT 1
+  MINVALUE 1
+  MAXVALUE 9223372036854775807
+  START 7
+  CACHE 1;
+ALTER TABLE public.usuariosjjagro_id_seq
+  OWNER TO postgres;
 
 --------------------------------------------------------------------------------------------------------

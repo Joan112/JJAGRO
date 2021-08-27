@@ -62,16 +62,20 @@ namespace JJAGRO_ADMIN
                     {
                         if ((Con != null) && (Con.State == ConnectionState.Open))
                         {
-                            string sCadenaSql = String.Format(" select correoelectronico, contraseña from usuariosjjagro where correoelectronico = '{0}' and contraseña = '{1}'",correo,pass);
+                            string sCadenaSql = String.Format(" select correoelectronico, contraseña from usuariosjjagro where correoelectronico = '{0}' and contraseña = '{1}'"
+                                ,correo
+                                ,pass);
+
                             Cmd = Con.CreateCommand();
                             Cmd.CommandType = CommandType.Text;
                             Cmd.CommandText = sCadenaSql;
                             CLog.XLog("VALIDANDO: " + sCadenaSql);
+
                             try
                             {
                                 reader = Cmd.ExecuteReader();
   
-                                if (!reader.Read())
+                                if (reader.Read())
                                 {
                                     CLog.XLog("Correo validado sera redireccionado al formulario principal");
                                     this.Hide();

@@ -43,11 +43,24 @@ namespace JJAGRO_ADMIN
             //validamos los campos
             if (!string.IsNullOrEmpty(txtpaterno.Text) && !string.IsNullOrEmpty(txtmaterno.Text) && !string.IsNullOrEmpty(txtnombres.Text) && !string.IsNullOrEmpty(txtcoreoregistro.Text) && !string.IsNullOrEmpty(txtpass.Text))
             {
-                string  parterno    = txtpaterno.Text,
-                        materno     = txtmaterno.Text,
-                        nombre      = txtnombres.Text,
-                        correo      = txtcoreoregistro.Text,
-                        pass        = txtpass.Text;
+                string parterno = txtpaterno.Text,
+                        materno = txtmaterno.Text,
+                        nombre = txtnombres.Text,
+                        correo = txtcoreoregistro.Text,
+                        admin,
+                        pass = txtpass.Text;
+
+                bool addmin;
+
+                if (Rbadmin.Checked == true)
+                {
+                    admin = "1";
+                }
+                else
+                {
+                    admin = "0";
+                }
+
 
                 bool isOk = ValidateEmail(correo);
 
@@ -57,7 +70,10 @@ namespace JJAGRO_ADMIN
                 }
                 else
                 {
+                    //validamos el checkbox de administrador
                     
+                    
+
                     OdbcConnection Con;
                     OdbcCommand Cmd;
                     OdbcDataReader reader;
@@ -69,12 +85,15 @@ namespace JJAGRO_ADMIN
 
                         if ((Con != null) && (Con.State == ConnectionState.Open))
                         {
-                            string sCadenaSql = String.Format("INSERT INTO usuariosjjagro (paterno,materno,nombres,correoelectronico,contraseña) VALUES ('{0}','{1}','{2}','{3}','{4}')"
+                           
+
+                            string sCadenaSql = String.Format("INSERT INTO usuariosjjagro (paterno,materno,nombres,correoelectronico,contraseña,administrador) VALUES ('{0}','{1}','{2}','{3}','{4}',{5})"
                                 , parterno
                                 , materno
                                 , nombre
                                 , correo
-                                , pass);
+                                , pass
+                                , admin);
 
                             Cmd = Con.CreateCommand();
                             Cmd.CommandType = CommandType.Text;
