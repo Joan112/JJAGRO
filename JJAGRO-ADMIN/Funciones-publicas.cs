@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.Odbc;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -77,10 +79,10 @@ namespace JJAGRO_ADMIN
             CLog.XLog("-------------------------------------------------------------");
 
             return true;
-        }  // fin 
+        }
 
         //Funciones que registra el usuario 
-        public static bool RegistraUsuario(string paterno, string materno, string nombre, string correo, string pass, string admin)
+        public static bool RegistraUsuario(string id, string paterno, string materno, string nombre, string correo, string pass, string admin)
         {
             CLog.XLog("-------------------------------------------------------------");
             OdbcConnection Con;
@@ -97,7 +99,8 @@ namespace JJAGRO_ADMIN
                 {
                     //validamos el correo que no se encuentre en la bD
 
-                    string sCadenaSql = String.Format("INSERT INTO usuariosjjagro (paterno,materno,nombres,correoelectronico,contraseña,administrador) VALUES ('{0}','{1}','{2}','{3}','{4}',{5})"
+                    string sCadenaSql = String.Format("INSERT INTO usuariosjjagro (id,paterno,materno,nombres,correoelectronico,contraseña,administrador) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',{6})"
+                        , id
                         , paterno
                         , materno
                         , nombre
@@ -143,6 +146,33 @@ namespace JJAGRO_ADMIN
             return true;
         }
 
+        //encriptador
+        public static string Encriptar(string Cadena)
+        {
+            SHA1CryptoServiceProvider SHA1 = new SHA1CryptoServiceProvider();
+            byte[] vectoBytes = System.Text.Encoding.UTF8.GetBytes(Cadena);
+            byte[] inArray = SHA1.ComputeHash(vectoBytes);
+            SHA1.Clear();
+            return Convert.ToBase64String(inArray);
+        }
+
+        //validar estructura de EMAIL
+        public static bool ValidateEmail(string email)
+        {
+            if (email == null)
+            {
+                return false;
+            }
+            if (new EmailAddressAttribute().IsValid(email))
+            {
+                return true;
+            }
+            else
+            {
+
+                return false;
+            }
+        }
 
 
     }

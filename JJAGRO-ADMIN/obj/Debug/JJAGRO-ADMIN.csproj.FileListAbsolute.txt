@@ -22,3 +22,4 @@ C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Deb
 C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.CoreCompileInputs.cache
 C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.exe
 C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.pdb
+C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.registroClientes.resources

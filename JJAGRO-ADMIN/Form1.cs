@@ -42,12 +42,14 @@ namespace JJAGRO_ADMIN
             if (!string.IsNullOrWhiteSpace(txtcorreo.Text) && !string.IsNullOrWhiteSpace(txtpass.Text))
             {
                 //capturamos el correo y procedemos a valiarlo
-                string correo = txtcorreo.Text;
-                string pass = txtpass.Text;
+                string correo = txtcorreo.Text.ToUpper();
+                string pass = txtpass.Text.ToUpper();
+
+                pass = Funciones_publicas.Encriptar(pass);
 
                 CLog.XLog("Correo Electronico: " + correo);
                 //validamos el correo
-                bool isOk = ValidateEmail(correo);
+                bool isOk = Funciones_publicas.ValidateEmail(correo);
                  
                 if (isOk)
                 {
@@ -84,7 +86,7 @@ namespace JJAGRO_ADMIN
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Usuario no autorizado el email no corresponde o no se encuentra en nuestros registros");
+                                    MessageBox.Show("Usuario no autorizado el email o contraseña incorrectos");
                                     Thread.Sleep(2000);
                                     txtcorreo.Text = "";
                                     txtpass.Text = "";
@@ -120,29 +122,6 @@ namespace JJAGRO_ADMIN
                 MessageBox.Show("El Correo o la Contraseña son requeridos obligatoriamente");
             }
             CLog.XLog("-------------------------------------------------------------");
-        }
-
-
-
-
-
-
-        //funciones de usuairo
-        static bool ValidateEmail(string email)
-        {
-            if (email == null)
-            {
-                return false;
-            }
-            if (new EmailAddressAttribute().IsValid(email))
-            {
-                return true;
-            }
-            else
-            {
-
-                return false;
-            }
         }
 
     }

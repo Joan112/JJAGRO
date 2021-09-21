@@ -40,16 +40,26 @@ namespace JJAGRO_ADMIN
         {
             
             //validamos los campos
-            if (!string.IsNullOrEmpty(txtpaterno.Text) && !string.IsNullOrEmpty(txtmaterno.Text) && !string.IsNullOrEmpty(txtnombres.Text) && !string.IsNullOrEmpty(txtcoreoregistro.Text) && !string.IsNullOrEmpty(txtpass.Text))
+            if (!string.IsNullOrEmpty(txtpaterno.Text) && 
+                !string.IsNullOrEmpty(txtmaterno.Text) && 
+                !string.IsNullOrEmpty(txtnombres.Text) && 
+                !string.IsNullOrEmpty(txtcoreoregistro.Text) && 
+                !string.IsNullOrEmpty(txtpass.Text))
             {
-                string paterno = txtpaterno.Text,
-                        materno = txtmaterno.Text,
-                        nombre = txtnombres.Text,
-                        correo = txtcoreoregistro.Text,
+                string  paterno = txtpaterno.Text.ToUpper(),
+                        materno = txtmaterno.Text.ToUpper(),
+                        nombre  = txtnombres.Text.ToUpper(),
+                        correo  = txtcoreoregistro.Text.ToUpper(),
                         admin,
-                        pass = txtpass.Text;
+                        pass    = txtpass.Text.ToUpper(),
+                        id;
 
                 bool addmin;
+
+                id = Funciones_publicas.Encriptar(paterno);
+                pass = Funciones_publicas.Encriptar(pass);
+
+                
 
                 if (Rbadmin.Checked == true)
                 {
@@ -61,7 +71,7 @@ namespace JJAGRO_ADMIN
                 }
 
 
-                bool isOk = ValidateEmail(correo);
+                bool isOk = Funciones_publicas.ValidateEmail(correo);
 
                 if (!isOk)
                 {
@@ -73,7 +83,7 @@ namespace JJAGRO_ADMIN
                     if(Funciones_publicas.ValidarEmailBD(correo))
                     {
 
-                        if (Funciones_publicas.RegistraUsuario(paterno,materno,nombre,correo,pass,admin))
+                        if (Funciones_publicas.RegistraUsuario(id,paterno, materno,nombre,correo,pass,admin))
                         {
                             this.Hide();
                             Form1 form = new Form1();
@@ -108,29 +118,6 @@ namespace JJAGRO_ADMIN
             this.txtpaterno.Focus();
         }
 
-
-
-
-        //funciones de usuairo
-        static bool ValidateEmail(string email)
-        {
-            if (email == null)
-            {
-                return false;
-            }
-            if (new EmailAddressAttribute().IsValid(email))
-            {
-                return true;
-            }
-            else
-            {
-
-                return false;
-            }
-        }
-
-        
-       
 
     }
 }
