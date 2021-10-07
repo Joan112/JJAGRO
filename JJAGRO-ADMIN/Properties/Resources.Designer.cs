@@ -83,6 +83,26 @@ namespace JJAGRO_ADMIN.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap avatar__2_ {
+            get {
+                object obj = ResourceManager.GetObject("avatar (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap avatar__3_ {
+            get {
+                object obj = ResourceManager.GetObject("avatar (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap limpieza_de_datos {
             get {
                 object obj = ResourceManager.GetObject("limpieza-de-datos", resourceCulture);
