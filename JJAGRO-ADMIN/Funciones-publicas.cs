@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Data.Odbc;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace JJAGRO_ADMIN
 {
@@ -174,6 +176,72 @@ namespace JJAGRO_ADMIN
             }
         }
 
+        public static bool RegistrarCliente(string maternocli,string paternocli,string nombrescli,string empresacli,string razoncli,string cultivocli,string hascli)
+        {
+            CLog.XLog("-------------------------------------------------------------");
+            CLog.XLog("Entramos a registrar cliente nuevo");
+            OdbcConnection Con;
+            OdbcCommand Cmd;
+            OdbcDataReader reader;
+
+            Con = CConeccion.conexionAG();
+
+            string sMensaje;
+            try
+            {
+
+                if ((Con != null) && (Con.State == ConnectionState.Open))
+                {
+
+                    string sCadenaSql = String.Format("insert into clientesjjagro (maternocli, paternocli, nombrescli, empresacli, razoncli, cultivocli, hascli)"+
+                                                      "values('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}'); "
+                                                    , maternocli
+                                                    , paternocli
+                                                    , nombrescli
+                                                    , empresacli
+                                                    , razoncli
+                                                    , cultivocli
+                                                    , hascli);
+
+                    Cmd = Con.CreateCommand();
+                    Cmd.CommandType = CommandType.Text;
+                    Cmd.CommandText = sCadenaSql;
+                    CLog.XLog("Ciente: " + sCadenaSql);
+
+                    try
+                    {
+
+                        reader = Cmd.ExecuteReader();
+                        CLog.XLog("Datos guardados correctamente");
+
+                      
+
+                        CLog.XLog("-------------------------------------------------------------");
+                        return true;
+                    }
+                    catch (Exception ex)
+                    {
+                        sMensaje = ex.Message.ToString();
+                        CLog.XLog("Problema al ejecutar la consulta: " + sMensaje);
+                    }
+                    finally
+                    {
+                        Con.Close();
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                sMensaje = ex.Message.ToString();
+                CLog.XLog("Problema de conexion: " + sMensaje);
+            }
+
+            return true;
+        }
+
+      
 
     }
 }

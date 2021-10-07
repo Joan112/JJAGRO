@@ -2,3 +2,6 @@
 
 # CS0168: La variable está declarada pero nunca se usa
 dotnet_diagnostic.CS0168.severity = silent
+
+# IDE0055: Fijar formato
+dotnet_diagnostic.IDE0055.severity = none

@@ -267,9 +267,9 @@ namespace JJAGRO_ADMIN
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(9, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Apellodo Materno";
+            this.label1.Text = "Apellido Materno";
             // 
             // txtmaterno
             // 

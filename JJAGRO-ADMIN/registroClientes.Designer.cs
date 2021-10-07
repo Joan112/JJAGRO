@@ -92,7 +92,7 @@ namespace JJAGRO_ADMIN
             this.txtnombrescliente.Location = new System.Drawing.Point(88, 280);
             this.txtnombrescliente.Name = "txtnombrescliente";
             this.txtnombrescliente.Size = new System.Drawing.Size(132, 13);
-            this.txtnombrescliente.TabIndex = 29;
+            this.txtnombrescliente.TabIndex = 2;
             // 
             // pictureBox5
             // 
@@ -110,9 +110,9 @@ namespace JJAGRO_ADMIN
             this.label1.ForeColor = System.Drawing.Color.SeaGreen;
             this.label1.Location = new System.Drawing.Point(76, 193);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 13);
+            this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 35;
-            this.label1.Text = "Apellodo Materno";
+            this.label1.Text = "Apellido Materno";
             // 
             // txtmaternocliente
             // 
@@ -121,7 +121,7 @@ namespace JJAGRO_ADMIN
             this.txtmaternocliente.Location = new System.Drawing.Point(88, 223);
             this.txtmaternocliente.Name = "txtmaternocliente";
             this.txtmaternocliente.Size = new System.Drawing.Size(132, 13);
-            this.txtmaternocliente.TabIndex = 28;
+            this.txtmaternocliente.TabIndex = 1;
             // 
             // pictureBox4
             // 
@@ -150,7 +150,7 @@ namespace JJAGRO_ADMIN
             this.txtpaternocliente.Location = new System.Drawing.Point(88, 163);
             this.txtpaternocliente.Name = "txtpaternocliente";
             this.txtpaternocliente.Size = new System.Drawing.Size(132, 13);
-            this.txtpaternocliente.TabIndex = 27;
+            this.txtpaternocliente.TabIndex = 0;
             // 
             // pictureBox3
             // 
@@ -168,9 +168,9 @@ namespace JJAGRO_ADMIN
             this.label4.ForeColor = System.Drawing.Color.SeaGreen;
             this.label4.Location = new System.Drawing.Point(77, 311);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 13);
+            this.label4.Size = new System.Drawing.Size(88, 13);
             this.label4.TabIndex = 40;
-            this.label4.Text = "Nomre Empresa";
+            this.label4.Text = "Nombre Empresa";
             // 
             // txtnombreempresacliente
             // 
@@ -179,7 +179,7 @@ namespace JJAGRO_ADMIN
             this.txtnombreempresacliente.Location = new System.Drawing.Point(88, 338);
             this.txtnombreempresacliente.Name = "txtnombreempresacliente";
             this.txtnombreempresacliente.Size = new System.Drawing.Size(132, 13);
-            this.txtnombreempresacliente.TabIndex = 38;
+            this.txtnombreempresacliente.TabIndex = 3;
             // 
             // pictureBox2
             // 
@@ -199,9 +199,10 @@ namespace JJAGRO_ADMIN
             this.btnregistrousuario.Location = new System.Drawing.Point(128, 447);
             this.btnregistrousuario.Name = "btnregistrousuario";
             this.btnregistrousuario.Size = new System.Drawing.Size(244, 41);
-            this.btnregistrousuario.TabIndex = 41;
-            this.btnregistrousuario.Text = "REGISTRAR USUARIO";
+            this.btnregistrousuario.TabIndex = 7;
+            this.btnregistrousuario.Text = "REGISTRAR CLIENTE";
             this.btnregistrousuario.UseVisualStyleBackColor = false;
+            this.btnregistrousuario.Click += new System.EventHandler(this.btnregistrousuario_Click);
             // 
             // BtnLimpiar
             // 
@@ -230,7 +231,7 @@ namespace JJAGRO_ADMIN
             this.txthascleinte.Location = new System.Drawing.Point(260, 280);
             this.txthascleinte.Name = "txthascleinte";
             this.txthascleinte.Size = new System.Drawing.Size(132, 13);
-            this.txthascleinte.TabIndex = 45;
+            this.txthascleinte.TabIndex = 6;
             // 
             // pictureBox6
             // 
@@ -260,7 +261,7 @@ namespace JJAGRO_ADMIN
             this.txtcultivocliente.Location = new System.Drawing.Point(260, 223);
             this.txtcultivocliente.Name = "txtcultivocliente";
             this.txtcultivocliente.Size = new System.Drawing.Size(132, 13);
-            this.txtcultivocliente.TabIndex = 44;
+            this.txtcultivocliente.TabIndex = 5;
             // 
             // pictureBox7
             // 
@@ -280,16 +281,17 @@ namespace JJAGRO_ADMIN
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 13);
             this.label7.TabIndex = 47;
-            this.label7.Text = "Razon social";
+            this.label7.Text = "Razón social";
             // 
             // txtrazoncliente
             // 
             this.txtrazoncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(219)))), ((int)(((byte)(219)))));
             this.txtrazoncliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtrazoncliente.Location = new System.Drawing.Point(260, 163);
+            this.txtrazoncliente.MaxLength = 13;
             this.txtrazoncliente.Name = "txtrazoncliente";
             this.txtrazoncliente.Size = new System.Drawing.Size(132, 13);
-            this.txtrazoncliente.TabIndex = 43;
+            this.txtrazoncliente.TabIndex = 4;
             // 
             // pictureBox8
             // 
@@ -333,7 +335,7 @@ namespace JJAGRO_ADMIN
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "registroClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "registroClientes";
+            this.Text = "Registro de Clientes";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();

@@ -23,3 +23,40 @@ C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Deb
 C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.exe
 C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.pdb
 C:\Users\usuario\Documents\Joan\Proyectos Personales\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.registroClientes.resources
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.exe.config
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.exe
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\JJAGRO-ADMIN.pdb
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.admin_jjagro.resources
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.Form1.resources
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.Properties.Resources.resources
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.registroClientes.resources
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.RegistroUsuario.resources
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.GenerateResource.cache
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.CoreCompileInputs.cache
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.exe
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.pdb
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.clientes.resources
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.stockProductos.resources
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\Npgsql.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Buffers.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Memory.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Text.Json.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Channels.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.ValueTuple.dll
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\Npgsql.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Buffers.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Memory.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Text.Json.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Channels.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.ValueTuple.xml
+C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.CopyComplete
