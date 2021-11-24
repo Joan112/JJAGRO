@@ -60,3 +60,29 @@ C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Th
 C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.ValueTuple.xml
 C:\Users\usuario\Documents\Joan\AGRICOLA\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.CopyComplete
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\Npgsql.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Buffers.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Memory.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Text.Json.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Channels.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.ValueTuple.dll
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\Npgsql.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Buffers.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Memory.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Text.Json.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Channels.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\bin\Debug\System.ValueTuple.xml
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.clientes.resources
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.registroClientes.resources
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO_ADMIN.stockProductos.resources
+C:\Users\JM_IM\Documents\PROYECTOS PERSONALES\JJAGRO\JJAGRO-ADMIN\obj\Debug\JJAGRO-ADMIN.csproj.CopyComplete
